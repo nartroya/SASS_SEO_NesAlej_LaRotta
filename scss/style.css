@@ -12311,6 +12311,11 @@ fieldset:disabled .btn {
 /****************************************/
 /******************** Cuerpo Index Main ********************/
 /* Sección inicial */
+.seccionUno {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .seccionUno .cajonSeccionUno {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12320,14 +12325,13 @@ fieldset:disabled .btn {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
   width: 50%;
+  margin: 0 auto;
 }
 
 .seccionUno .cajonSeccionUno .imagenResalte {
   width: 200px;
-  margin: auto;
+  margin: 0 auto;
   -webkit-transition: all 1.3s;
   transition: all 1.3s;
 }
@@ -13410,31 +13414,104 @@ seccionMarcasNE {
 }
 
 #opcionFormularioUnoC {
-  width: 60%;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.frmCamp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.frmCampLbl {
+  width: 20%;
+}
+
+.frmCampLbl p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.frmCampTxt {
+  width: 80%;
+}
+
+.frmCampTxt input {
+  width: 90%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.219);
+}
+
+.frmTextarea {
+  width: 100%;
+  text-align: center;
+}
+
+.frmTextareaCamp {
+  width: 90%;
+}
+
+.frmBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.frmBtnBtn {
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  border: 2px solid #47D0AF;
+  border-radius: 5px;
+}
+
+.frmBtnBtn input {
+  text-align: center;
+  width: 100%;
 }
 
 #opcionFormularioDosC {
-  width: 40%;
+  width: 50%;
 }
 
 /* Dirección Mapa */
+.mapaDireccionC {
+  height: 50%;
+}
+
 .cajonDireccionC {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0 auto;
+  height: 50%;
 }
 
 .cajonImagenDireccionC {
-  width: 30%;
-  margin-top: auto;
-  margin-bottom: auto;
+  width: 25%;
+  margin: auto;
 }
 
 .textoDireccionC {
-  width: 70%;
+  width: 75%;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.textoDireccionC h3, .textoDireccionC .h3 {
+  margin: revert;
 }
 
 .imagenDireccionC {
@@ -13870,6 +13947,13 @@ seccionMarcasNE {
 
 /****************************************/
 /******************** Media Queries CONTACTANOS ********************/
+@media (min-width: 481px) and (max-width: 1023px) {
+  .formularioC {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 480px) {
   .tituloOpcionC {
     display: -webkit-box;
@@ -13903,6 +13987,9 @@ seccionMarcasNE {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .tituloFormularioC {
+    margin-left: 10px;
+  }
   .cajonImagenDireccionC {
     width: 90%;
   }
@@ -13919,6 +14006,22 @@ seccionMarcasNE {
   }
   #opcionFormularioDosC {
     margin-top: 20px;
+  }
+  .frmCampTxt input {
+    width: 100%;
+  }
+  .cajonDireccionC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .textoDireccionC h3, .textoDireccionC .h3 {
+    margin: revert;
   }
 }
 

@@ -294,7 +294,10 @@
 /****************************************/
 /******************** Media Queries CONTACTANOS ********************/
 @media (min-width: 481px) and (max-width: 1023px) {
-    
+    .formularioC {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 @media (max-width: 480px) {
     .tituloOpcionC {
@@ -313,6 +316,9 @@
         display: flex;
         flex-direction: column;
     }
+    .tituloFormularioC {
+        margin-left: 10px;
+    }
     .cajonImagenDireccionC {
         width: 90%;
     }
@@ -329,6 +335,17 @@
     }
     #opcionFormularioDosC {
         margin-top: 20px;
+    }
+    .frmCampTxt input {
+        width: 100%;
+    }
+    .cajonDireccionC {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .textoDireccionC h3 {
+        margin: revert;
     }
 }
 /****************************************/
